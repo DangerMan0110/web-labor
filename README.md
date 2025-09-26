@@ -1,3 +1,2 @@
 # web-labor
-# szia
-# alma
+# asd
