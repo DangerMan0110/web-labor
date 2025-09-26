@@ -1,0 +1,93 @@
+/* Component and utility styles */
+
+/* Buttons */
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: darkorange;
+    transform: translateY(-1px);
+}
+
+/* Links */
+a,
+button {
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+/* Avatar utility */
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Ordered list */
+ol {
+    list-style-type: upper-roman;
+    margin-left: 30px;
+}
+
+/* Container layout */
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.container>div {
+    flex: 1;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+/* Grid utility */
+.grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Header and nav */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #bcc9e1;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 10px 16px;
+    justify-content: center;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 8px 10px;
+    color: inherit;
+}
