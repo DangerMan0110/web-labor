@@ -1,0 +1,72 @@
+/* Base: reset, typography, global layout/colors */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    background-color: #bcc9e1;
+    color: #222;
+}
+
+h1 {
+    color: royalblue;
+}
+
+h2 {
+    color: seagreen;
+}
+
+p {
+    margin: 20px 0;
+    line-height: 1.7;
+}
+
+/* Global media defaults */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Accessibility focus outline */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid cornflowerblue;
+    outline-offset: 2px;
+}
+
+/* Center overall layout but keep header at top */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* horizontal center */
+    justify-content: flex-start;
+    /* header stays on top */
+    text-align: center;
+}
+
+/* Tables and forms centered generally */
+table {
+    margin: 0 auto;
+}
+
+form {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+}
