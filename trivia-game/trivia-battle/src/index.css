@@ -1,0 +1,55 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#06b6d4;
+  --success:#16a34a;
+  --danger:#ef4444;
+  --muted:#94a3b8;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,Arial;}
+html,body,#root{height:100%;}
+body{
+  background:linear-gradient(180deg,#071024 0%, #0b1220 100%);
+  color:#e6eef6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.app{
+  width:100%;
+  max-width:900px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:12px;
+  padding:24px;
+  box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
+.title{font-size:1.25rem;}
+.controls{display:flex;gap:8px;align-items:center;}
+.btn{
+  background:var(--accent);
+  border:none;padding:8px 12px;border-radius:8px;color:#032026;font-weight:600;cursor:pointer;
+}
+.small{padding:6px 8px;font-size:0.9rem;}
+.center{display:flex;align-items:center;justify-content:center;}
+.card{
+  background:var(--card);padding:18px;border-radius:10px;margin-top:12px;
+}
+.options{display:flex;flex-direction:column;gap:8px;margin-top:12px;}
+.option{
+  padding:12px;border-radius:8px;background:rgba(255,255,255,0.02);cursor:pointer;border:1px solid rgba(255,255,255,0.03);
+  transition:all .18s;
+}
+.option:hover{transform:translateY(-2px);}
+.option.correct{background:linear-gradient(90deg, rgba(22,163,74,0.15), rgba(22,163,74,0.07));border-color:rgba(22,163,74,0.45);}
+.option.wrong{background:linear-gradient(90deg, rgba(239,68,68,0.12), rgba(239,68,68,0.06));border-color:rgba(239,68,68,0.45);}
+.progress{
+  height:10px;background:rgba(255,255,255,0.06);border-radius:99px;overflow:hidden;margin-top:12px;
+}
+.progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#8b5cf6);width:0%;}
+.timer{font-weight:700;}
+.leaderboard-list{list-style:none;padding-left:0;margin-top:12px;}
+.leaderboard-item{display:flex;justify-content:space-between;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.02);margin-bottom:8px;}
+.footer{display:flex;justify-content:space-between;align-items:center;margin-top:12px;}
